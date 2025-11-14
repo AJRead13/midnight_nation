@@ -1,0 +1,95 @@
+.lore-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lore-page h1 {
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.category-filter {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-filter button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #1a1a2e;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.category-filter button:hover {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+
+.category-filter button.active {
+  background-color: #f39c12;
+  color: white;
+  border-color: #f39c12;
+}
+
+.lore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.lore-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.lore-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lore-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.lore-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.lore-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.placeholder-content {
+  text-align: center;
+  padding: 3rem;
+  color: #777;
+  grid-column: 1 / -1;
+}
+
+.placeholder-content p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}

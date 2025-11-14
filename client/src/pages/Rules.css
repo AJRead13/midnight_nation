@@ -1,0 +1,53 @@
+.rules-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rules-page h1 {
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.rules-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rules-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-section h2 {
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f39c12;
+}
+
+.rule-card {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #f39c12;
+}
+
+.rule-card:last-child {
+  margin-bottom: 0;
+}
+
+.rule-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.rule-card p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
