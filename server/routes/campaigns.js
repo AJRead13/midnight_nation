@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
+const { createLimiter } = require('../middleware/rateLimiter');
 const Campaign = require('../models/Campaign');
 
 // Get all campaigns
@@ -48,7 +49,7 @@ router.get('/:id', auth, async (req, res) => {
 });
 
 // Create new campaign
-router.post('/', auth, async (req, res) => {
+router.post('/', auth, createLimiter, async (req, res) => {
   try {
     const campaign = new Campaign({
       ...req.body,

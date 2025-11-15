@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
+const { createLimiter } = require('../middleware/rateLimiter');
 const Character = require('../models/Character');
 
 // Get all characters for logged-in user
@@ -36,7 +37,7 @@ router.get('/:id', auth, async (req, res) => {
 });
 
 // Create new character
-router.post('/', auth, async (req, res) => {
+router.post('/', auth, createLimiter, async (req, res) => {
   try {
     const character = new Character({
       ...req.body,

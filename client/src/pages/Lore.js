@@ -9,10 +9,6 @@ const Lore = () => {
 
   const categories = ['history', 'location', 'faction', 'deity', 'legend', 'other'];
 
-  useEffect(() => {
-    fetchLore();
-  }, [selectedCategory]);
-
   const fetchLore = async () => {
     try {
       const response = await loreAPI.getAll(selectedCategory);
@@ -23,6 +19,11 @@ const Lore = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchLore();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCategory]);
 
   if (loading) return <div className="loading">Loading lore...</div>;
 
