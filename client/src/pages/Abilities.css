@@ -1,0 +1,123 @@
+.abilities-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.abilities-page h1 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.type-filter {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.type-filter button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #1a1a2e;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.type-filter button:hover {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+
+.type-filter button.active {
+  background-color: #f39c12;
+  color: white;
+  border-color: #f39c12;
+}
+
+.abilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.ability-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ability-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ability-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ability-header h3 {
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.ability-type {
+  padding: 0.25rem 0.75rem;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.ability-type.passive {
+  background-color: #3498db;
+}
+
+.ability-type.active {
+  background-color: #e74c3c;
+}
+
+.ability-type.reaction {
+  background-color: #9b59b6;
+}
+
+.ability-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.ability-details {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.ability-details p {
+  color: #555;
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.placeholder-content {
+  text-align: center;
+  padding: 3rem;
+  color: #777;
+  grid-column: 1 / -1;
+}
+
+.placeholder-content p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}

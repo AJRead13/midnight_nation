@@ -1,0 +1,85 @@
+.navbar {
+  background-color: #1a1a2e;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f39c12;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #e67e22;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.navbar-link:hover {
+  color: #f39c12;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-user {
+  color: #ecf0f1;
+  font-weight: 500;
+}
+
+.navbar-button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #ecf0f1;
+  border: 1px solid #ecf0f1;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.navbar-button:hover {
+  background-color: #ecf0f1;
+  color: #1a1a2e;
+}
+
+.navbar-button-primary {
+  background-color: #f39c12;
+  border-color: #f39c12;
+  color: #fff;
+}
+
+.navbar-button-primary:hover {
+  background-color: #e67e22;
+  border-color: #e67e22;
+  color: #fff;
+}
