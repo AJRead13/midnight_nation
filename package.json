@@ -9,7 +9,17 @@
     "client": "cd client && npm start",
     "build": "cd client && npm run build"
   },
-  "keywords": ["ttrpg", "mern", "react", "mongodb", "express"],
+  "keywords": [
+    "ttrpg",
+    "mern",
+    "react",
+    "mongodb",
+    "express"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "node": "^25.2.0"
+  }
 }
